@@ -1,8 +1,5 @@
 #!/bin/zsh
 
-command -v brew >/dev/null 2>&1 || curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
-command -v gum >/dev/null 2>&1 || brew install gum
-
 show_network_connection_status() {
     local target_ssid="$1"
     local ssh_host="$2"
@@ -95,4 +92,4 @@ ssh_via_service() {
   }
 }
 
-alias lmm='ssh_via_service "daniel-apartment" "daiigr@192.168.2.7" 22 "LAN Solo"'
+alias $ssh_alias='ssh_via_service "$service"  "$server_ssh_host" "$server_ssh_port" "$target_network"'
