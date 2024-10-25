@@ -35,7 +35,7 @@ is_on_network() {
   # Get the current SSID
   # Seqoia workaround
   # since networksetup -getairportnetwork en0 doesn't work
-  current_ssid=$(airport -I | awk -F ': ' '/ SSID/ {print $2}')
+  current_ssid=$(ipconfig getsummary en0 | awk -F ' SSID : '  '/ SSID : / {print $2}')
 
   # Check if the current SSID matches the target SSID
   [[ "$current_ssid" == "$target_ssid" ]] && return 0 || return 1
