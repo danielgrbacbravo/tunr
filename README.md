@@ -22,7 +22,7 @@
 
 1. **Clone the repository** (or place the `tunr.sh` and `tunr_setup.sh` files into your desired directory):
    ```sh
-   git clone https://github.com/yourusername/tunr.git ~/path/to/clone/repo
+   git clonehttps://github.com/danielgrbacbravo/tunr.git
    ```
 
 2. **Configure `.zshrc`** to include `tunr`:
@@ -38,7 +38,7 @@
 
    Add the following at the end of the file, adjusting the path as needed:
    ```sh
-   export TUNR_DIR="$HOME/path/to/clone/repo"
+   export TUNR_DIR="/path/to/clone/repo"
 
    # Source setup and main script functions
    [ -f "$TUNR_DIR/tunr_setup.sh" ] && source "$TUNR_DIR/tunr_setup.sh" &&\
@@ -50,10 +50,10 @@
    source ~/.zshrc
    ```
 
-4. **Customize SSH Alias** (optional):  
+4. **Customize SSH Alias** (optional):
    You can set a shortcut alias for running `tunr`. Edit the script to replace `$ssh_alias` with your chosen alias and `$service`, `$server_ssh_host`, `$server_ssh_port`, and `$target_network` with your configuration.
 
-5. **Customize VPN/Service and Network Settings**:  
+5. **Customize VPN/Service and Network Settings**:
    - Replace `service_name` in `connect_service`, `disconnect_service`, and `service_status` functions with the actual name of your VPN or service.
    - Set the target network SSID in `target_ssid` variable in `ssh_via_service` as needed.
 
