@@ -3,8 +3,8 @@
 **tunr** is a ZSH script that automates SSH connections through a specific network and/or VPN service, checking network connection status and handling service connections as needed.
 
 <p align="center">
-  <img src="assets/local.gif" alt="Local" width="200"/>
-  <img src="assets/vpn.gif" alt="VPN" width="200"/>
+  <img src="assets/local.gif" alt="Local" width="350"/>
+  <img src="assets/vpn.gif" alt="VPN" width="350"/>
 </p>
 
 ## Features
