@@ -2,6 +2,10 @@
 
 **tunr** is a ZSH script that automates SSH connections through a specific network and/or VPN service, checking network connection status and handling service connections as needed.
 
+
+![Local](assets/local.gif)
+![VPN](assets/vpn.gif)
+
 ## Features
 
 - Checks if you’re connected to the target SSID before establishing the SSH connection.
